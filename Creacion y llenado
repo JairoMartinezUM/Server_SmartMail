@@ -142,6 +142,7 @@ begin
 		on fe.ID_Fecha_Entrega = ifp.ID_Fecha_Entrega
 	inner join Matriculas as m
 		on m.ID_Matricula_Entregado = ifp.ID_Matricula_Entregado
+	order by ID_Paquete
 end;
 
 exec usp_Contenido_Info_Paquete
